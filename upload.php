@@ -42,7 +42,7 @@ if ($_FILES['the_file']['error'] > 0)
 	// does the file have the right MIME type?
 	if ( ! (($_FILES['the_file']['type'] == 'image/png') || ($_FILES['the_file']['type'] == 'image/jpeg')) )
 	{
-		echo 'Problem: file is not a PNG image.';
+		echo 'Problem: file is not a PNG or JPEG image.';
 		exit;
 	}
 
